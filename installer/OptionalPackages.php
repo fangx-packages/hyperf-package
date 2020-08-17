@@ -136,7 +136,7 @@ class OptionalPackages
 
     public function setUpName()
     {
-        $name = $this->io->ask('<info>What is your component name (fangx/package-name): </info>', 'package-name');
+        $name = $this->io->ask('<info>What is your component name (package-name): </info>', 'package-name');
         $this->composerDefinition['name'] = sprintf('fangx/%s', $name);
 
         return $name;
