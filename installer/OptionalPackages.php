@@ -121,6 +121,11 @@ class OptionalPackages
         $this->installerSource = realpath(__DIR__) . '/';
     }
 
+    public function name($name)
+    {
+        return sprintf("%s/%s", 'fangx', $name);
+    }
+
     /**
      * SetUp component name.
      */
@@ -137,7 +142,8 @@ class OptionalPackages
     public function setUpName()
     {
         $name = $this->io->ask('<info>What is your component name (fangx/package-name): </info>', 'package-name');
-        $this->composerDefinition['name'] = sprintf('fangx/%s', $name);
+        $name = $this->name($name);
+        $this->composerDefinition['name'] = $name;
 
         return $name;
     }

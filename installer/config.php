@@ -26,7 +26,7 @@ return [
     'questions' => [
         'framework' => [
             'question' => 'Do you want to use hyperf/framework component ?',
-            'default' => 'y',
+            'default' => 'n',
             'required' => false,
             'force' => true,
             'custom-package' => true,
@@ -41,7 +41,7 @@ return [
         ],
         'di' => [
             'question' => 'Do you want to use hyperf/di component ?',
-            'default' => 'y',
+            'default' => 'n',
             'required' => false,
             'force' => true,
             'custom-package' => true,
