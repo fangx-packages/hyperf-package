@@ -44,7 +44,7 @@
     "pre-install-cmd": "Installer\\Script::install",
     "pre-update-cmd": "Installer\\Script::install",
     "cs-fix": "php-cs-fixer fix $1",
-    "test": "./vendor/bin/phpunit -c phpunit.xml --color=always --testdox",
-    "test-coverage": "php -d zend_extension=xdebug ./vendor/bin/phpunit -c phpunit.xml --color=always --testdox --coverage-html .codeCoverage"
+    "test": "./vendor/bin/phpunit -c phpunit.xml --color=always",
+    "test-coverage": "php -d zend_extension=xdebug ./vendor/bin/phpunit -c phpunit.xml --color=always --coverage-html .codeCoverage"
   }
 }
